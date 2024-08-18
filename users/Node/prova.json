@@ -1,0 +1,218 @@
+{
+  "years": [
+    {
+      "yearTeams": [
+        {
+          "year": 2023,
+          "teamName": "Team 1",
+          "members": [
+            "Marchi Thomas",
+            "Calderone Michele",
+            "Seganti Nathan"
+          ],
+          "membersRole": [
+            "Team Leader/Programmer",
+            "Programmer",
+            "Builder"
+          ],
+          "img": "https://i.postimg.cc/rwGTc1zS/woodcock-3.webp",
+          "membersImg": [
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380"
+          ]
+        },
+        {
+          "year": 2023,
+          "teamName": "Team 2",
+          "members": [
+            "Marchi Thomas",
+            "Calderone Michele",
+            "Seganti Nathan"
+          ],
+          "membersRole": [
+            "Team Leader/Programmer",
+            "Programmer",
+            "Builder"
+          ],
+          "img": "../../robocup_team1_2023.jpg",
+          "membersImg": [
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380"
+          ]
+        },
+        {
+          "year": 2023,
+          "teamName": "Team 3",
+          "members": [
+            "Marchi Thomas",
+            "Calderone Michele",
+            "Seganti Nathan"
+          ],
+          "membersRole": [
+            "Team Leader/Programmer",
+            "Programmer",
+            "Builder"
+          ],
+          "img": "../../robocup_team1_2023.jpg",
+          "membersImg": [
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380"
+          ]
+        }
+      ]
+    },
+    {
+      "yearTeams": [
+        {
+          "year": 2024,
+          "teamName": "Tecno-Floriani",
+          "members": [
+            "Cont Gabriele",
+            "Rizzi Daniele",
+            "Risatti Daniele"
+          ],
+          "membersRole": [
+            "Team Leader/Programmer",
+            "Programmer",
+            "Builder"
+          ],
+          "img": "../../robocup_team1_2023.jpg",
+          "membersImg": [
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380"
+          ]
+        },
+        {
+          "year": 2024,
+          "teamName": "Go Floriani",
+          "members": [
+            "Morandi Daniel",
+            "Bojenoyu Andrey",
+            "Pizzedaz Matilde"
+          ],
+          "membersRole": [
+            "Team Leader/Programmer",
+            "Programmer",
+            "Builder"
+          ],
+          "img": "../../robocup_team1_2023.jpg",
+          "membersImg": [
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380"
+          ]
+        },
+        {
+          "year": 2024,
+          "teamName": "Team 3",
+          "members": [
+            "Pilati Leonardo",
+            "Nicolodi Tristan"
+          ],
+          "membersRole": [
+            "Team Leader/Programmer",
+            "Programmer",
+            "Builder"
+          ],
+          "img": "../../robocup_team1_2023.jpg",
+          "membersImg": [
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380"
+          ]
+        },
+        {
+          "year": 2024,
+          "teamName": "Tecno-Floriani National",
+          "members": [
+            "Seganti Nathan",
+            "Cont Gabriele",
+            "Morandi Daniel",
+            "Pizzedaz Matilde"
+          ],
+          "membersRole": [
+            "Team Leader / Builder",
+            "Programmer",
+            "Support",
+            "Support"
+          ],
+          "img": "../../robocup_team1_2023.jpg",
+          "membersImg": [
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380"
+          ]
+        }
+      ]
+    },
+    {
+      "yearTeams": [
+        {
+          "year": 2025,
+          "teamName": "Team 1",
+          "members": [
+            "numero 1",
+            "numero 2",
+            "numero 3"
+          ],
+          "membersRole": [
+            "Team Leader/Programmer",
+            "Programmer",
+            "Builder"
+          ],
+          "img": "../../robocup_team1_2023.jpg",
+          "membersImg": [
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380"
+          ]
+        },
+        {
+          "year": 2025,
+          "teamName": "Team 2",
+          "members": [
+            "numero 1",
+            "numero 2",
+            "numero 3"
+          ],
+          "membersRole": [
+            "Team Leader/Programmer",
+            "Programmer",
+            "Builder"
+          ],
+          "img": "../../robocup_team1_2023.jpg",
+          "membersImg": [
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380"
+          ]
+        },
+        {
+          "year": 2025,
+          "teamName": "Team 3",
+          "members": [
+            "numero 1",
+            "numero 2",
+            "numero 3"
+          ],
+          "membersRole": [
+            "Team Leader/Programmer",
+            "Programmer",
+            "Builder"
+          ],
+          "img": "../../robocup_team1_2023.jpg",
+          "membersImg": [
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380",
+            "https://img.freepik.com/foto-gratuito/edifici-del-centro-di-los-angeles-di-notte_649448-298.jpg?t=st=1719570497~exp=1719574097~hmac=88c3f9f966310044399d68ce4f1a425a3e83d779cda521fb04178a32bb58d54b&w=1380"
+          ]
+        }
+      ]
+    }
+  ]
+}

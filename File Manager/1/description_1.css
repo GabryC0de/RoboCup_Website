@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url('../../walp.jpeg') no-repeat;
+    background-size: cover;
+    color: white;
+    background-position: bottom center;
+}
+
+.go-back {
+    background: transparent;
+    backdrop-filter: blur(40px);
+    border-radius: 12px;
+    padding: 10px 25px;
+    display: inline-block;
+    font-size: 20px;
+    border-color: black;
+    border-width: 2px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    margin-left: 1lh;
+    margin-top: 2vh;
+    transition: 0.3s;
+}
+
+.go-back:hover {
+    background-color: rgba(0, 0, 0, 0.688);
+}
+
+.title {
+    padding: 10px;
+    border-radius: 12px;
+    background-color: transparent;
+    backdrop-filter: blur(7px);
+    display: inline-block;
+}

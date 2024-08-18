@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Db Page</title>
+    <link rel="stylesheet" href="jsonViewr.css">
+
+</head>
+
+<body>
+
+    <div id="flexer">
+        <fieldset id="title-container">
+            <h1>Db View</h1>
+        </fieldset>
+    </div>
+
+    <fieldset id="json-wrapper">
+        <p id="json">
+
+        </p>
+    </fieldset>
+
+
+    <script>
+        fetch('../../Node/prova.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                } else {
+                    return response.json();
+                }
+            })
+            .then(data => {
+                const paragraph = document.querySelector('#json');
+
+                let jsonString = JSON.stringify(data, null, 2);
+
+                // Escape HTML characters
+                jsonString = jsonString.replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;');
+
+                // Replace newline characters with <br> and spaces with &nbsp;
+                jsonString = jsonString.replace(/\n/g, '<br>')
+                    .replace(/  /g, '&nbsp;&nbsp;');
+
+                const body = document.querySelector('body');
+                paragraph.innerHTML = jsonString;
+            })
+    </script>
+</body>
+
+</html>

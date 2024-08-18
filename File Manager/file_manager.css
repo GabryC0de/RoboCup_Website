@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url('../walp.jpeg') no-repeat;
+    background-size: cover;
+    color: white;
+    background-position: bottom center;
+}
+
+.home {
+    background: transparent;
+    backdrop-filter: blur(40px);
+    border-radius: 12px;
+    padding: 10px 25px;
+    display: inline-block;
+    font-size: 20px;
+    border-color: black;
+    border-width: 2px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    margin-left: 1lh;
+    margin-top: 2vh;
+    transition: 0.3s;
+}
+
+.home:hover {
+    background-color: rgba(0, 0, 0, 0.688);
+}
+
+.title {
+    text-align: center;
+    border: transparent;
+    padding: 10px 10px 10px 10px;
+}
+
+.inner-title {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+    border-radius: 12px;
+    background-color: transparent;
+    backdrop-filter: blur(7px);
+    border-color: black;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    border-width: 3px;
+}
+
+/* div con i 4 riquadri */
+.link {
+    background-color: rgba(0, 0, 0, 0.196);
+    padding: 15px 50px 15px 50px;
+    margin: 15px 15px 15px 15px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+    position: relative;
+}
+
+.link:hover {
+    margin: 10px 10px 10px 10px;
+}
+
+/* div generale */
+.container {
+    display: flex;
+    justify-content: center; 
+}
+
+/* griglia */
+.blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 50px 15px 15px 15px;
+    padding: 5px 5px 5px 5px;
+    background-color: transparent;
+    border-color: transparent;
+    backdrop-filter: blur(7px);
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    width: 70%;
+    height: 70%;
+}
+
+/* pulsante effettivo */
+.download {
+    background-color: transparent;
+    padding: 5px 5px 5px 5px;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(7px);
+    border-width: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.download:hover {
+    background-color: rgba(0, 0, 0, 0.688);
+}
+
+/* pulsante link */
+.link {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    padding-top: 10px;
+}

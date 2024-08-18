@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+h3 {
+    color: white;
+    text-decoration: underline;
+}
+
+body {
+    min-height: 100vh;
+    background: url('../../walp.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+}
+
+
+
+.welcome {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    height: auto;
+}
+main {
+    padding: 10px;
+    height: 79vh;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    
+}
+
+.logout {
+    position: fixed;
+    background: rgb(47, 47, 82);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    border-radius: 30px;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 20px;
+    border-color: black;
+    border-width: 2px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    margin-left: 1lh;
+    margin-top: 2vh;
+    transition: 0.3s;
+}
+
+.logout:hover {
+    background-image: radial-gradient(transparent, black);
+    color: #631a8e;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+}
+
+.h1-wrapper {
+    border-color: white;
+    border-width: 3px;
+    border-radius: 12px;
+    background-color: #631a8e;
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    padding: 10px;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    text-decoration: underline white 1px;
+}
+
+.link {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+
+.nav-wrap-left,
+.nav-wrap-center,
+.nav-wrap-right {
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    border-radius: 30px;
+    border-width: 1.5px;
+    border-color: black;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    padding: 15px;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-width: 2px;
+    border-color: white;
+    margin: 10px;
+}
+
+.nav-wrap-left::-webkit-scrollbar {
+    width: 10px;
+    padding: 1px;
+}
+
+.nav-wrap-left::-webkit-scrollbar-track {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.nav-wrap-left::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #631a8e;
+}
+
+.nav-wrap-center::-webkit-scrollbar {
+    width: 10px;
+    padding: 1px;
+}
+
+.nav-wrap-center::-webkit-scrollbar-track {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.nav-wrap-center::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #631a8e;
+}
+
+.flexed-titles {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.left-title-wrap,
+.center-title-wrap,
+.right-title-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+    color: white;
+    border-radius: 20px;
+    border-width: 3.5px;
+    background-color: #631a8e;
+}
+
+/*  
+    DA MODIFICARE
+    LA ZONA BLURRATA NON RESTRINGE GLI ELEMENTI
+    CHE CONTIENE QUANDO VIENE RIDIMENSIONATA 
+*/
+
+.form {
+    display: block;
+    margin: 17px 5px;
+    padding: 10px;
+}
+
+.inputs-container {
+    height: auto;
+    width: auto;
+    color: #fff;
+    font-family: 'roboto', sans-serif;
+    padding: 10px;
+}
+
+.inputs {
+    border-radius: 10px;
+    border-color: white;
+    border-width: 1px;
+    padding: 5px;
+    display: block;
+    margin: 10px 0px;
+    font-style: italic;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    transition: 0.5s;
+    width: 100%;
+    color: purple;
+}
+
+.inputs::placeholder {
+    color: white;
+}
+
+.inputs:focus {
+    color: purple;
+    background-color: white;
+}
+
+.inputs:focus::placeholder {
+    color: purple;
+}
+
+.inputs:not(:focus) {
+    background-color: transparent;
+    color: white;
+}
+
+.inputs:not(:focus)::placeholder {
+    color: white;
+}
+
+.add-btn {
+    background: transparent;
+    backdrop-filter: blur(40px);
+    border-radius: 12px;
+    padding: 5px 10px;
+    display: inline-block;
+    border-color: black;
+    border-width: 2px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+}
+
+.add-btn:hover {
+    background-image: radial-gradient(transparent, black);
+    color: #631a8e;
+}
+
+/* right part-------------------------------------------------------------------------------------------------------------------------------- */
+#choice-container {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.right-choice-buttons {
+    width: 50%;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    color: white;
+    font-size: 17px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    transition: 0.5s;
+}
+
+.right-choice-buttons:hover {
+    background-image: radial-gradient(transparent, black);
+    color: #631a8e;
+}
+
+#viewDb {
+    background: rgb(47, 47, 82);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    border-radius: 30px;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 20px;
+    border-color: black;
+    border-width: 2px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+}
+
+#viewDb:hover {
+    background-image: radial-gradient(transparent, black);
+    color: #631a8e;
+}

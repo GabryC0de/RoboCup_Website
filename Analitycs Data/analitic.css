@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: url('../walp.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home {
+  background: transparent;
+  backdrop-filter: blur(40px);
+  border-radius: 12px;
+  padding: 10px 25px;
+  display: inline-block;
+  font-size: 20px;
+  border-color: black;
+  border-width: 2px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+  margin-left: 1lh;
+  margin-top: 2vh;
+  transition: 0.3s;
+}
+
+.home:hover {
+  background-color: rgba(0, 0, 0, 0.688);
+}
+
+h1{
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  #primo{
+    text-align: center;
+    border: transparent;
+  }
+  
+  #secondo{
+    display: inline-block;
+    backdrop-filter: blur(40px);
+    background-color: transparent;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    border-color: transparent;
+  }
