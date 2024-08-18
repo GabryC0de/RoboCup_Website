@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url("../../walp.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.go-back {
+    position: fixed;
+    background: transparent;
+    backdrop-filter: blur(40px);
+    border-radius: 12px;
+    padding: 10px 25px;
+    display: inline-block;
+    font-size: 20px;
+    border-color: black;
+    border-width: 2px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    left: 1lh;
+    top: 2vh;
+    transition: 0.3s;
+}
+
+.go-back:hover {
+    background-color: rgba(0, 0, 0, 0.688);
+}
+
+#title-wrapper {
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    padding: 10px;
+    border-radius: 12px;
+    background-color: transparent;
+    backdrop-filter: blur(7px);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    border-color: black;
+    border-width: 2px;
+    margin-top: 20px;
+    display: inline-block;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+}
+
+.link{
+    text-decoration: underline;
+    color: white;
+}
+
+.row{
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+}
+
+.picture{
+    width: 70%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
