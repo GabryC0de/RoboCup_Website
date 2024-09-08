@@ -15,13 +15,14 @@
   <a href="../index.html">
     <button type="button" class="home">HOME</button>
   </a>
-  <fieldset id="primo">
+  <div id="primo">
     <fieldset id="secondo">
       <h1>
         Placements
       </h1>
     </fieldset>
-  </fieldset>
+  </div>
+
   <div class="wrapper">
     <div class="container">
       <input type="radio" name="slide" id="c1" class="boh">
@@ -55,26 +56,17 @@
             <p>Coming Soon</p>
           </div>
         </div>
-        <script src="placements.js"></script>
-        <!-- <script>
-          document.addEventListener('DOMContentLoaded', (event) => {
-            let img1 = document.querySelector('lable[for="c1"]');
-            let radio1 = document.querySelector('#c1');
-            radio1.addEventListener('change', () => {
-              if(radio1.checked) {
-                img1.style.backgroudImage = 'url("ROBOCUP_2023.jpg")';
-                img1.style.backgroudSize = 'cover';
-                img1.style.backgroudRepeat = 'no-repeat';
-                img1.style.backgroudColor = 'transparent';
-                console.log("Radio 1 checked");
-              }else{
-                img1.style.backgroudImage = 'none';
-                img1.style.backgroudColor = 'transparent';
-              }
-            });
+    </div>
+  </div>
+  <footer id="informations">
+    <div id="flexer">
+      <fieldset id="content">
+        In this section you'll see only the placements of the national teams of the various years.
+      </fieldset>
+    </div>
+  </footer>
+  <script src="placements.js"></script>
 
-          });
-        </script> -->
 </body>
 
 </html>

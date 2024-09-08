@@ -16,7 +16,7 @@ h3 {
 
 body {
     min-height: 100vh;
-    background: url('../../walp.jpeg') no-repeat;
+    background: url('../walp.jpeg') no-repeat;
     background-size: cover;
     background-position: center;
     padding: 15px;
@@ -273,7 +273,7 @@ footer{
 }
 
 #viewDb {
-    background: rgb(47, 47, 82);
+    background: rgba(47,47,82,255);
     -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
     border-radius: 30px;

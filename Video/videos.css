@@ -8,52 +8,10 @@
 
 body{
     background: url('../walp.jpeg') no-repeat;
-    background-position: center top ;
-    height: 400px;
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.uploading-square{
-    display: inline-block;
-    margin: auto;
-    background: transparent;
-    backdrop-filter: blur(7px);
-    padding: 20px 20px 20px 20px;
-    border-radius: 17px;
-    border-color: transparent;
-    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
-}
-
-.general{
-    margin-top: 40vh;
-    margin-left: 30lh;
-}
-
-#Upload{
-    padding: 5px 5px 5px 5px;
-    border-radius: 6px;
-    background-color: transparent;
-    border-color: black;
-}
-
-#file{
-    padding: 5px;
-    background-color: transparent;
-    border-radius: 12px;
-    backdrop-filter: blur(7px);
-}
-
-#upload_file{
-    display: flex;
-    align-items: center;
-    padding: 6px;
-    border-radius: 17px;
-    background-color: transparent;
-    display: inline-block;
-    color: white;
-    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
-    border-color: transparent;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
 }
 
 .home{
@@ -91,9 +49,10 @@ h1{
     display: inline-block;
     backdrop-filter: blur(40px);
     background-color: transparent;
-    padding: 15px 15px 15px 15px;
+    padding: 15px 25px;
     border-radius: 20px;
     box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
-    border-color: transparent;
+    border-color: white;
+    border-width: 2px;
   }
   

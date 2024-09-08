@@ -15,77 +15,78 @@ if (isset($_SESSION['ID']) && isset($_SESSION['userName'])) {
         <link rel="icon" type="immage/png?v=2" href="../../logo.png">
     </head>
 
-    <body>
-        <header class="top">
-            <div class="welcome">
-                <fieldset class="h1-wrapper">
-                    <h1>Admin Page</h1>
+    <header class="top">
+        <div class="welcome">
+            <fieldset class="h1-wrapper">
+                <h1>Admin Page</h1>
+            </fieldset>
+        </div>
+        <a href="logout.php" class="link">
+            <button type="button" class="logout">Logout</button>
+        </a>
+    </header>
+    <main>
+
+        <!-- ADD YEAR TEAMS -->
+        <fieldset class="nav-wrap-left">
+            <div class="flexed-titles">
+                <fieldset class="left-title-wrap">
+                    <h2 class="addings">Add full year infos</h2>
                 </fieldset>
             </div>
-            <a href="logout.php" class="link">
-                <button type="button" class="logout">Logout</button>
-            </a>
-        </header>
-        <main>
+            <form class="form" id="form_1">
+                <h3>Year and Teams:</h3>
+                <input type="number" placeholder="Year" autocomplete="off" class="inputs" name="year" required>
+                <input type="number" placeholder="Teams Amount" autocomplete="off" class="inputs" name="teams" required>
+                <input type="submit" value="Next" class="add-btn">
+            </form>
+        </fieldset>
 
-            <!-- ADD YEAR TEAMS -->
-            <fieldset class="nav-wrap-left">
-                <div class="flexed-titles">
-                    <fieldset class="left-title-wrap">
-                        <h2 class="addings">Add full year infos</h2>
-                    </fieldset>
-                </div>
-                <form class="form" id="form_1">
-                    <h3>Year and Teams:</h3>
-                    <input type="number" placeholder="Year" autocomplete="off" class="inputs" name="year" required>
-                    <input type="number" placeholder="Teams Amount" autocomplete="off" class="inputs" name="teams" required>
-                    <input type="submit" value="Next" class="add-btn">
+        <!-- ADD A TEAM-->
+        <fieldset class="nav-wrap-center">
+            <div class="flexed-titles">
+                <fieldset class="center-title-wrap">
+                    <h2 class="mods">Add a Team</h2>
+                </fieldset>
+            </div>
+            <div class="forms">
+                <form class="form" id="form-1-center">
+
+                    <h3>What's the team year?</h3>
+
                 </form>
-            </fieldset>
+            </div>
+        </fieldset>
 
-            <!-- ADD A TEAM-->
-            <fieldset class="nav-wrap-center">
-                <div class="flexed-titles">
-                    <fieldset class="center-title-wrap">
-                        <h2 class="mods">Add a Team</h2>
-                    </fieldset>
-                </div>
-                <div class="forms">
-                    <form class="form" id="form-1-center">
+        <!-- DELETE A TEAM-->
+        <fieldset class="nav-wrap-right">
+            <div class="flexed-titles">
+                <fieldset class="right-title-wrap">
+                    <h2 class="mods">Delete a Team</h2>
+                </fieldset>
+            </div>
+            <div class="forms">
+                <form class="form" id="form-1-right">
 
-                        <h3>What's the team year?</h3>
+                    <h3>What's the team year?</h3>
 
-                    </form>
-                </div>
-            </fieldset>
+                </form>
+            </div>
+        </fieldset>
 
-            <!-- DELETE A TEAM-->
-            <fieldset class="nav-wrap-right">
-                <div class="flexed-titles">
-                    <fieldset class="right-title-wrap">
-                        <h2 class="mods">Delete a Team</h2>
-                    </fieldset>
-                </div>
-                <div class="forms">
-                    <form class="form" id="form-1-right">
+    </main>
 
-                        <h3>What's the team year?</h3>
+    <footer>
+        <a href="./jsonViewer/jsonViewer.html">
+            <button type="button" id="viewDb">
+                View full teams file
+            </button>
+        </a>
+    </footer>
 
-                    </form>
-                </div>
-            </fieldset>
-
-        </main>
-        <footer>
-            <a href="">
-                <button type="button" id="viewDb">
-                    View full teams file
-                </button>
-            </a>
-        </footer>
-        <script type="module" src="Js/addings.js"></script>
-        <script type="module" src="Js/remove.js"></script>
-        <script type="module" src="Js/partialAdding.js"></script>
+    <script type="module" src="Js/addings.js"></script>
+    <script type="module" src="Js/remove.js"></script>
+    <script type="module" src="Js/partialAdding.js"></script>
     </body>
 
     </html>

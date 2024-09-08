@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     radioButtons.forEach((radio, index) => {
         radio.addEventListener('change', (event) => {
             const checkedRadioButton = event.target;
-            console.log(`Radio ${checkedRadioButton.id} checked`);
+            // console.log(`Radio ${checkedRadioButton.id} checked`);
 
             // Remove background image from all labels
             labels.forEach((label) => {

@@ -3,8 +3,8 @@ body {
     background-size: cover;
     background-position: center;
     /* width: 100vw; */
-    height: 100vh;
-    overflow: hidden;
+    height: 93vh;
+    overflow: auto;
 }
 
 h1{
@@ -21,7 +21,8 @@ h1{
 #title-container{
     display: inline-block;
     border-radius: 20px;
-    border-color: 2px;
+    border-width: 3px;
+    border-color: white;
     background-color: transparent;
     backdrop-filter: blur(7px);
     padding: 0px 15px;
@@ -29,14 +30,16 @@ h1{
 
 #json-wrapper{
     margin: 10px;
-    border-width: 2px;
+    border-width: 5px;
     border-color: white;
     border-radius: 12px;
     background-color: transparent;
+    -webkit-backdrop-filter: blur(7px);
     backdrop-filter: blur(7px);
-    max-height: 80%;
-    overflow-y: auto;
+    max-height: 78%;
+    overflow: auto;
     position: relative;
+    max-width: auto;
 }
 
 #json {
@@ -57,4 +60,44 @@ h1{
 #json-wrapper::-webkit-scrollbar-thumb {
     border-radius: 8px;
     background-color: #631a8e;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    padding: 1px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: black;
+    border: 1px solid;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #631a8e;
+}
+
+#back-button-wrapper{
+    display: inline-block;
+}
+
+#back-button{
+    background: rgb(47, 47, 82);
+    -webkit-backdrop-filter: blur(7px);
+    backdrop-filter: blur(7px);
+    border-radius: 30px;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 20px;
+    border-color: black;
+    border-width: 2px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+}
+
+#back-button:hover {
+    background-image: radial-gradient(transparent, black);
+    color: #631a8e;
 }
