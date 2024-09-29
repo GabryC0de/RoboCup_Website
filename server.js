@@ -39,7 +39,10 @@ async function run() {
 
 
         app.use(express.json()); // Middleware to parse JSON request body
-
+        // Fallback route to serve index.html
+        app.get('/', (req, res) => {
+          res.sendFile(__dirname + '/index.html');
+        });
         app.post('/register', async (req, res) => {
             if (!db) {
                 return res.status(500).json({ message: 'Database not connected' });
