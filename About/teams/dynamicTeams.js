@@ -1,15 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     const jsonData = async () => {
-        const response = await fetch(
-            `../../users/Node/prova.json`);
+        // production
+        const response = await fetch('/api/data');
+        // developement
+        // const response = await fetch('http://127.0.0.1:3000/api/data');
         const data = await response.json();
-        return data;
+        return data[0];
     };
 
     jsonData().then((data) => {
         const strYear = localStorage.getItem('selectedYear');
         const year = parseInt(strYear);
-        console.log(year);
         // const generalContainer = document.querySelector('.container');
         for (let i = 0; i < data.years.length; i++) {
             let yearTeamsJson = data.years[i].yearTeams;

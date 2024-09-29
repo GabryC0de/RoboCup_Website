@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const jsonData = async () => {
-        const response = await fetch(
-            `../../../users/Node/prova.json`);
+        // production
+        const response = await fetch('/api/data');
+        // developement
+        // const response = await fetch('http://127.0.0.1:3000/api/data');
         const data = await response.json();
-        return data;
+        return data[0];
     };
 
     // fetching the json data
@@ -54,9 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // ultra fucking cool JavaScript animated caroussel from GitHub (Cassianosch)
         const container = document.querySelector(".container");
-        const containercarrossel = container.querySelector(".container-carrossel");
-        const carrossel = container.querySelector(".carrossel");
-        const carrosselItems = carrossel.querySelectorAll(".carrossel-item");
+        const containerCarossel = container.querySelector(".container-carrossel");
+        const carossel = container.querySelector(".carrossel");
+        const carosselItems = carossel.querySelectorAll(".carrossel-item");
 
         // state-changing variables
         let isMouseDown = false;
@@ -67,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const createcarrossel = () => {
             const carrosselProps = onResize();
-            const length = carrosselItems.length; // lenght of the array
+            const length = carosselItems.length; // lenght of the array
             const degress = 360 / length; // Grados por cada item
             const gap = 20; // Espacio entre cada item
             const tz = distanceZ(carrosselProps.w, length, gap);
@@ -78,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             container.style.width = tz * 2 + gap * length + "px";
             container.style.height = height + "px";
 
-            carrosselItems.forEach((item, i) => {
+            carosselItems.forEach((item, i) => {
                 const degressByItem = degress * i + "deg";
                 item.style.setProperty("--rotatey", degressByItem);
                 item.style.setProperty("--tz", tz + "px");
@@ -106,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Calcula el campo de vision del carrossel
         const calculateFov = (carrosselProps) => {
             const perspective = window
-                .getComputedStyle(containercarrossel)
+                .getComputedStyle(containerCarossel)
                 .perspective.split("px")[0];
 
             const length =
@@ -127,14 +129,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const update = () => {
             lastMoveTo = lerp(moveTo, lastMoveTo, 0.05);
-            carrossel.style.setProperty("--rotatey", lastMoveTo + "deg");
+            carossel.style.setProperty("--rotatey", lastMoveTo + "deg");
 
             requestAnimationFrame(update);
         };
 
         const onResize = () => {
             // Obtiene la propiedades del tamaño de carrossel
-            const boundingcarrossel = containercarrossel.getBoundingClientRect();
+            const boundingcarrossel = containerCarossel.getBoundingClientRect();
 
             const carrosselProps = {
                 w: boundingcarrossel.width,
@@ -146,29 +148,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const initEvents = () => {
             // Eventos del mouse
-            carrossel.addEventListener("mousedown", () => {
+            carossel.addEventListener("mousedown", () => {
                 isMouseDown = true;
-                carrossel.style.cursor = "grabbing";
+                carossel.style.cursor = "grabbing";
             });
-            carrossel.addEventListener("mouseup", () => {
+            carossel.addEventListener("mouseup", () => {
                 isMouseDown = false;
-                carrossel.style.cursor = "grab";
+                carossel.style.cursor = "grab";
             });
             container.addEventListener("mouseleave", () => (isMouseDown = false));
 
-            carrossel.addEventListener(
+            carossel.addEventListener(
                 "mousemove",
                 (e) => isMouseDown && getPosX(e.clientX)
             );
 
             // Eventos del touch
-            carrossel.addEventListener("touchstart", () => {
+            carossel.addEventListener("touchstart", () => {
                 isMouseDown = true;
-                carrossel.style.cursor = "grabbing";
+                carossel.style.cursor = "grabbing";
             });
-            carrossel.addEventListener("touchend", () => {
+            carossel.addEventListener("touchend", () => {
                 isMouseDown = false;
-                carrossel.style.cursor = "grab";
+                carossel.style.cursor = "grab";
             });
             container.addEventListener(
                 "touchmove",
@@ -180,8 +182,6 @@ document.addEventListener('DOMContentLoaded', () => {
             update();
             createcarrossel();
         };
-
         initEvents();
-
     });
 });

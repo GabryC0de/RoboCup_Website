@@ -1,7 +1,10 @@
 // gotta work on this mother fucking function
 // or maybe on the admin.js data management
 export function add(year, teamsNames, membersNamesByTeam, membersRolesByTeam, teamsImgs, membersImgs) {
-    fetch('../../Node/prova.json')
+    // production
+    fetch('/api/data')
+    // developement
+    // fetch('http://127.0.0.1:3000/api/data')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -25,8 +28,11 @@ export function add(year, teamsNames, membersNamesByTeam, membersRolesByTeam, te
             });
 
             const updatedJsonData = JSON.stringify(data, null, 2);
-
-            return fetch('http://127.0.0.1:3000/save-json', {  // Update the URL to match server port
+            
+            // production
+            return fetch('/save-json', {  // Update the URL to match server port
+            // developement
+            // return fetch('http://127.0.0.1:3000/save-json', {  // Update the URL to match server port
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -49,7 +55,10 @@ export function add(year, teamsNames, membersNamesByTeam, membersRolesByTeam, te
 
 
 export function erase(targetYear, targetTeam) {
-    fetch('../../Node/prova.json')
+    // production
+    fetch('/api/data')
+    // developement
+    // fetch('http://127.0.0.1:3000/api/data')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -69,8 +78,10 @@ export function erase(targetYear, targetTeam) {
             });
 
             const updatedJsonData = JSON.stringify(data, null, 2);
-
-            return fetch('http://127.0.0.1:3000/save-json', {  // Update the URL to match server port
+            // production
+            return fetch('/save-json', {  // Update the URL to match server port
+            // developement
+            // return fetch('http://127.0.0.1:3000/save-json', {  // Update the URL to match server port
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -91,7 +102,10 @@ export function erase(targetYear, targetTeam) {
 }
 
 export function partialAdd(targetYear, teamName, teamMembers, membersRoles, teamImg, membersImgs) {
-    fetch('../../Node/prova.json')
+    // production
+    fetch('/api/data')
+    // developement
+    // fetch('http://127.0.0.1:3000/api/data')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -118,8 +132,10 @@ export function partialAdd(targetYear, teamName, teamMembers, membersRoles, team
             });
 
             const updatedJsonData = JSON.stringify(data, null, 2);
-
-            return fetch('http://127.0.0.1:3000/save-json', {  // Update the URL to match server port
+            // production
+            return fetch('/save-json', {  // Update the URL to match server port
+            // developement
+            // return fetch('http://127.0.0.1:3000/save-json', {  // Update the URL to match server port
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -140,7 +156,10 @@ export function partialAdd(targetYear, teamName, teamMembers, membersRoles, team
 }
 
 export function show() {
-    fetch('../../Node/prova.json')
+    // production
+    fetch('/api/data')
+    // developement
+    // fetch('http://127.0.0.1:3000/api/data')
         .then(response => response.json())
         .then(data => {
             console.log(data.years)

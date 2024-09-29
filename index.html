@@ -4,7 +4,6 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -26,59 +25,60 @@
     </div>
 
     <ul class="list">
-      <li class="list-item">
+      <li class="list-item" id="flowchart">
         <a href="Flowchart/flowchart.html">
           <i class="fa-solid fa-square-poll-vertical"></i>
           <span class="link-name" style="--i:1;">Flowchart</span>
         </a>
       </li>
-      <li class="list-item">
+      <li class="list-item" id="errors">
         <a href="Error/error_messages.html">
           <i class='bx bxs-error'></i>
           <span class="link-name" style="--i:3;">Errors</span>
         </a>
       </li>
-      <li class="list-item">
+      <li class="list-item" id="analytics-data">
         <a href="Analitycs Data/analitics_data.html">
           <i class="bx bx-line-chart"></i>
           <span class="link-name" style="--i:4;">Analytics Data</span>
         </a>
       </li>
-      <li class="list-item">
+      <li class="list-item" id="file-manager">
         <a href="File Manager/file_manager.html">
           <i class="bx bx-folder"></i>
           <span class="link-name" style="--i:5;">File Manager</span>
         </a>
       </li>
-      <li class="list-item">
+      <li class="list-item" id="video">
         <a href="Video/videos.html">
           <i class='bx bxs-videos'></i>
           <span class="link-name" style="--i:7;">Video</span>
         </a>
       </li>
-      <li class="list-item">
+      <li class="list-item" id="placements">
         <a href="Placement/placements.html">
           <i class="bx bx-trophy"></i>
           <span class="link-name" style="--i:7;">Placements</span>
         </a>
       </li>
-      <li class="list-item">
+      <li class="list-item" id="about-us">
         <a href="About/years/years.html">
           <i class='bx bx-book-open'></i>
           <span class="link-name" style="--i:8;">About Us</span>
         </a>
       </li>
-      <li class="list-item">
+      <li class="list-item" id="register">
         <a href="users/register.html">
           <i class="fa-solid fa-registered"></i>
           <span class="link-name" style="--i:8;">Register</span>
         </a>
       </li>
-      <li class="list-item">
+      <li class="list-item" id="login">
         <a href="users/login.html">
           <i class="fa-solid fa-user"></i>
           <span class="link-name" style="--i:8;">Login</span>
         </a>
+        <!-- <span class="tooltiptext">Log In</span>    -->
       </li>
     </ul>
   </nav>
@@ -86,8 +86,9 @@
     <div class="containers" id="top">
       <div class="squares top" id="top-left">
         <p>
-          All the info of this website are bound to the current year national team.
-          For a full view across the info of all teams of the previous years you can visit the <a href="./About/years/years.html" id="about-link">"About Us"</a> section.
+          Tutte le informazioni contenute in questo sito rigurdano i team dell'anno attuale.
+          Per ulteriori informazioni sui team degli anni precedenti visitare la pagina <a
+            href="./About/years/years.html" id="about-link">"About Us"</a>.
         </p>
       </div>
 
@@ -110,5 +111,50 @@
       </div>
     </div>
   </div>
+  <script>
+    import tippy from 'tippy.js';
+    import 'tippy.js/dist/tippy.css'; // optional for styling
+  </script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
   <script src="script.js"></script>
+  <script>
+    tippy.setDefaultProps({
+      delay: [250, 50],
+      arrow: true,
+      followCursor: false,
+      placement: 'right',
+      theme: 'custom',
+      allowHTML: true,
+    });
+
+    tippy('#login', {
+      content: 'Loggati qui!',
+    });
+    tippy('#register', {
+      content: 'Registrati qui!',
+    });
+    tippy('#flowchart', {
+      content: 'Flowchart di quest\'anno',
+      maxWidth: '115px'
+    });
+    tippy('#errors', {
+      content: 'Errori riscontrati',
+    });
+    tippy('#analytics-data', {
+      content: 'Le nostre<br>analisi',
+    });
+    tippy('#file-manager', {
+      content: 'I nostri file',
+    });
+    tippy('#video', {
+      content: 'I nostri video',
+    });
+    tippy('#placements', {
+      content: 'I nostri risultati',
+    });
+    tippy('#about-us', {
+      content: 'Info sulle<br>nostre squadre',
+    });
+  </script>
 </body>

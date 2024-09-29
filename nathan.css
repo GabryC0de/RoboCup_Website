@@ -213,19 +213,53 @@ p {
     font-family: 'poppins', sans-serif;
 }
 
-#about-link{
-    color: purple;
+#about-link {
+    color: rgb(96, 0, 96);
     transition: .3s
 }
 
-#about-link:hover{
+#about-link:hover {
     color: aqua;
 }
 
-#about-link:visited{
+#about-link:visited {
+    color: purple;
+}
+
+#about-link:visited:hover {
+    color: aqua;
+}
+
+/* Tooltip text */
+#login .tooltiptext {
+    /* visibility: hidden; */
+    top: -5px;
+    left: 105%;
+    width: 60px;
+    font-size: 12px;
+    background-color: rgb(0, 0, 0, 0.6);
     color: #fff;
+    text-align: center;
+    padding: 0px 5px;
+    border-radius: 12px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
 }
 
-#about-link:visited:hover{
-    color: aqua;
+/* Show the tooltip text when you mouse over the tooltip container */
+#login:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tippy-box[data-theme~='custom'] {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.tippy-box[data-theme~='custom'][data-placement^='right'] > .tippy-arrow::before{
+    border-right-color: purple;
 }

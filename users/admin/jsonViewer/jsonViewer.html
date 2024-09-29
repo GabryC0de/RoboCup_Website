@@ -28,34 +28,82 @@
 
         </p>
     </fieldset>
+    <script>
+        async function loadPage() {
+            const token = localStorage.getItem('token'); // Get the stored token
 
+            if (!token) {
+                alert('You are not logged in!');
+                window.location.href = '../../login.html'; // Redirect to login page if no token
+                return;
+            }
+
+            try {
+                // production
+                const response = await fetch('/admin', {
+                // development
+                // const response = await fetch('http://127.0.0.1:3000/admin', {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': token // Send the token in the Authorization header
+                    }
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    // Display user data or dashboard content
+                    document.getElementById('dashboardContent').innerText = `Welcome, ${data.user.email}!`;
+                } else {
+                    alert('Unauthorized. Please log yourself in.');
+                    window.location.href = '../../login.html'; // Redirect if unauthorized
+                }
+            } catch (error) {
+                console.error('Error loading dashboard:', error);
+            }
+        }
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('body').style.visibility = 'hidden';
+            // Call this function when the dashboard page loads
+            document.querySelector('body').style.visibility = 'visible';
+            loadPage();
+        });
+
+    </script>
 
     <script>
-        fetch('../../Node/prova.json')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                } else {
-                    return response.json();
-                }
-            })
-            .then(data => {
-                const paragraph = document.querySelector('#json');
+        document.addEventListener('DOMContentLoaded', () => {
+            // production
+            fetch('/api/data')
+            // developement
+            // fetch('http://127.0.0.1:3000/api/data')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    } else {
+                        return response.json();
+                    }
+                })
+                .then(data => {
+                    const paragraph = document.querySelector('#json');
 
-                let jsonString = JSON.stringify(data, null, 2);
+                    let jsonString = JSON.stringify(data, null, 2);
 
-                // Escape HTML characters
-                jsonString = jsonString.replace(/&/g, '&amp;')
-                    .replace(/</g, '&lt;')
-                    .replace(/>/g, '&gt;');
+                    // Escape HTML characters
+                    jsonString = jsonString.replace(/&/g, '&amp;')
+                        .replace(/</g, '&lt;')
+                        .replace(/>/g, '&gt;');
 
-                // Replace newline characters with <br> and spaces with &nbsp;
-                jsonString = jsonString.replace(/\n/g, '<br>')
-                    .replace(/  /g, '&nbsp;&nbsp;');
+                    // Replace newline characters with <br> and spaces with &nbsp;
+                    jsonString = jsonString.replace(/\n/g, '<br>')
+                        .replace(/  /g, '&nbsp;&nbsp;');
 
-                const body = document.querySelector('body');
-                paragraph.innerHTML = jsonString;
-            })
+                    const body = document.querySelector('body');
+                    paragraph.innerHTML = jsonString;
+                });
+        });
+
     </script>
 </body>
 

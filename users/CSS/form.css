@@ -50,7 +50,8 @@ body {
     text-align: center;
     font-size: 80px;
     font-weight: 300;
-    margin-bottom: 50px;
+    margin: 25px 0px;
+    text-decoration: underline;
 }
 
 input,
@@ -101,26 +102,4 @@ input:focus::placeholder {
 
 .link:hover {
     color: #fff;
-}
-
-.alert-box {
-    position: absolute;
-    top: -100%;
-    left: 50%;
-    transform: translateX(-50%);
-    min-width: 150px;
-    max-width: 90%;
-    width: auto;
-    height: auto;
-    padding: 10px;
-    background: rgb(225, 119, 119);
-    border: 10px solid rgb(225, 37, 37);
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    color: #fff;
-    font-family: 'roboto', sans-serif;
-    text-align: center;
-    transition: 1s;
-    z-index: 2;
-    
 }

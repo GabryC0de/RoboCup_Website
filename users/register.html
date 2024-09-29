@@ -10,18 +10,13 @@
 </head>
 
 <body>
-
-    <div class="alert-box">
-        <p class="alert">Your account has been registered successfully!</p>
-    </div>
-
     <fieldset>
-        <form action="../PHP/registration.php" method="post">
+        <form id="reg-form">
             <div class="form">
                 <h1 class="heading">Register</h1>
-                <input type="text" placeholder="Name" autocomplete="off" class="name" name="userName" required>
-                <input type="email" placeholder="E-mail" autocomplete="off" class="email" name="email" required>
-                <input type="password" placeholder="Password" autocomplete="off" class="password" name="password"
+                <input id="name" type="text" placeholder="Name" autocomplete="off" class="name" name="userName" required>
+                <input id="email" type="email" placeholder="E-mail" autocomplete="off" class="email" name="email" required>
+                <input id="password" type="password" placeholder="Password" autocomplete="off" class="password" name="password"
                     required>
                 <input type="submit" value="Register" class="submit-btn" placeholder="submit" />
                 <a href="login.html" class="link">Alredy have an account? Login here</a>
@@ -30,6 +25,6 @@
     </fieldset>
 
     <script src="js/form.js"></script>
+    <script src="js/getRegData.js"></script>
 </body>
-
 </html>

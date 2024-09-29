@@ -2,9 +2,10 @@ body {
     background: url('../../../walp.jpeg');
     background-size: cover;
     background-position: center;
-    /* width: 100vw; */
-    height: 93vh;
-    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 h1{
@@ -44,7 +45,6 @@ h1{
 
 #json {
     color: white;
-    /* flex-grow: 1; Add this */
 }
 
 #json-wrapper::-webkit-scrollbar {

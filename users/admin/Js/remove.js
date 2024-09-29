@@ -30,7 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
     form.appendChild(submitButton);
 
 
-    fetch('../../Node/prova.json')
+    // production
+    fetch('/api/data')
+        // developement
+        // fetch('http://127.0.0.1:3000/api/data')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -74,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const formsContainer = navRight.querySelector('.forms');
 
                 formsContainer.appendChild(form2);
-                
+
                 const question2 = document.createElement('h3');
                 question2.innerText = "Whats the team name?";
                 form2.appendChild(question2);
