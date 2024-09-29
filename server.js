@@ -43,6 +43,7 @@ async function run() {
         app.get('/', (req, res) => {
           res.sendFile(__dirname + '/index.html');
         });
+        app.use(express.static('/'));
         app.post('/register', async (req, res) => {
             if (!db) {
                 return res.status(500).json({ message: 'Database not connected' });
