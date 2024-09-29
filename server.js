@@ -13,7 +13,8 @@ const uri = "mongodb+srv://gabrielecont2006:UyUbiRmhulEDuLOq@robocupdb.4lwxc.mon
 const dbName = 'robocup_db';
 let db;
 app.use(cors({
-    origin: 'http://127.0.0.1:5500', // front-end port
+    // origin: 'http://127.0.0.1:5500', // front-end port
+    origin: "https://purple-v.onrender.com",
     credentials: true
 }));
 // Atlas
