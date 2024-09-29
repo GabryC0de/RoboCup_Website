@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const fs = require('fs');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
@@ -26,7 +27,6 @@ const client = new MongoClient(uri, {
         deprecationErrors: true,
     }
 });
-app.use(express.static(path.join(__dirname, '/')));
 async function run() {
     try {
         // Connect the client to the server	(optional starting in v4.7)
@@ -43,6 +43,9 @@ async function run() {
         app.get('/', (req, res) => {
           res.sendFile(__dirname + '/index.html');
         });
+        
+        app.use(express.static(path.join(__dirname, '/')));
+        
         app.post('/register', async (req, res) => {
             if (!db) {
                 return res.status(500).json({ message: 'Database not connected' });
